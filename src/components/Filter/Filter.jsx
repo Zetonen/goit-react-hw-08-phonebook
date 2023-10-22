@@ -8,6 +8,7 @@ export const Filter = () => {
   const dispatch = useDispatch();
   
   const handleChangeFilter = (e) =>{
+    console.log(e.target.value.trim());
     dispatch(search(e.target.value.trim()))
   }
   return (
